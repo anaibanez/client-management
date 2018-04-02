@@ -1,0 +1,41 @@
+{
+  "name": "client-management",
+  "version": "1.0.0",
+  "description": "A client management demo application",
+  "author": "Ana Isabel Ibáñez García",
+  "private": true,
+  "scripts": {
+    "start": "node src/app.js",
+    "devstart": "nodemon src/app.js",
+    "lint": "esw src config --color",
+    "test": "jest src/tests",
+    "test:coverage": "jest --collectCoverageFrom=src/**/*.js --coverage"
+  },
+  "dependencies": {
+    "body-parser": "~1.0.1",
+    "compression": "1.7.2",
+    "debug": "~2.6.9",
+    "dotenv": "^4.0.0",
+    "express": "~4.16.0",
+    "express-validation": "1.0.2",
+    "express-winston": "2.5.0",
+    "http-errors": "~1.6.2",
+    "http-status": "1.0.1",
+    "joi": "10.6.0",
+    "jsonfile": "^4.0.0",
+    "morgan": "1.9.0",
+    "winston": "2.4.1"
+  },
+  "devDependencies": {
+    "eslint": "3.16.1",
+    "eslint-config-airbnb-base": "7.1.0",
+    "eslint-plugin-import": "1.16.0",
+    "eslint-plugin-jest": "^21.15.0",
+    "eslint-watch": "2.1.14",
+    "nodemon": "^1.17.2",
+    "chai": "4.1.2",
+    "supertest": "3.0.0",
+    "supertest-as-promised": "4.0.2",
+    "jest-cli": "^22.4.3"
+  }
+}
