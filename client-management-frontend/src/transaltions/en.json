@@ -1,0 +1,26 @@
+{
+    "header.title": "Client Management",
+
+    "common.pageInfo": "Page {currentPage} of {totalPages} ({totalResults} elements)",
+    "common.pageSize": "Page size",
+    "common.goBack": "Go back",
+    "common.noDataTable": "No results found",
+
+    "client.name": "Name",
+    "client.username": "Username",
+    "client.email": "Email",
+    "client.phone": "Phone",
+    "client.website": "Website",
+    "client.address.street": "Street",
+    "client.address.suite": "Suite",
+    "client.address.city": "City",
+    "client.address.zipcode": "Zip Code",
+    "client.address": "Address",
+    "client.company": "Company",
+    "client.company.name": "Company Name",
+    "client.company.catchPhrase": "Catch Phrase",
+    "client.company.bs": "Bs",
+    "client.detail": "Client Details",
+    "client.save": "Save",
+    "client.create": "Create client"
+}

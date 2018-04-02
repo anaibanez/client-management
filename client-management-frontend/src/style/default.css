@@ -1,0 +1,32 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.min.css";
+
+body {
+    font-size: 14px;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: normal;
+    height: 100%;
+    margin: 0;
+}
+
+.main-body {
+    margin: 20px 25px;
+}
+
+
+@media (min-width: 1500px) {
+    .container.extended {
+        width: 1470px;
+    }
+}
+
+@media (min-width: 1900px) {
+    .container.extended {
+        width: 1870px;
+    }
+}
+
+/** Remove focus blue square on several elements **/
+div {
+    outline: none;
+}

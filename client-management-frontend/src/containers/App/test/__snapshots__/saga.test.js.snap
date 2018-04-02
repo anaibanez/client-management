@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`fetchSaga should dispatch the fulfilled if it requests the data successfully 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "PUT": Object {
+    "action": Object {
+      "type": "FETCH_client_PENDING",
+    },
+    "channel": null,
+  },
+}
+`;
+
+exports[`fetchSaga should dispatch the fulfilled if it requests the data successfully 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      undefined,
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
