@@ -24,7 +24,6 @@ const commonSchema = {
                 .required(),
 
     email: Joi.string().email(),
-    website: Joi.string().uri(),
 
     address: Joi.object(addressSchema),
     company: Joi.object(companySchema)
