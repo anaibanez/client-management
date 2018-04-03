@@ -45,7 +45,7 @@ npm test
 Jest and Enzyme: 
 The application has an example of unit tests using Jest and Enzyme for components, sagas, reducers, actions and selectors:
 
-![](doc/test.PNG)
+![](doc/test.png)
 
 #### Lint
 ```sh
