@@ -39,7 +39,7 @@ describe('mapDispatchToProps', () => {
       expect(result.onUpdateClient).toBeDefined();
     });
 
-    it('should dispatch createClient when called', () => {
+    it('should dispatch updateClient when called', () => {
       const dispatch = jest.fn();
       const result = mapDispatchToProps(dispatch);
       result.onUpdateClient(client);
