@@ -22,5 +22,7 @@
     "client.company.bs": "Bs",
     "client.detail": "Client Details",
     "client.save": "Save",
-    "client.create": "Create client"
+    "client.create": "Create client",
+    "client.address.geo.lng": "Longitude",
+    "client.address.geo.lat": "Latitude"
 }

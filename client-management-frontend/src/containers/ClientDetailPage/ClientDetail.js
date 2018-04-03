@@ -60,6 +60,15 @@ const myClientDetail = ({ className, detail }) => {
             <dt className="col-md-6">{getLiteral('client.address.zipcode')}</dt>
             <dd className="col-md-6">{address.zipcode}</dd>
           </dl>
+          <dl className="row">
+            <dt className="col-md-6">{getLiteral('client.address.geo.lat')}</dt>
+            <dd className="col-md-6">{address.geo.lat}</dd>
+          </dl>
+
+          <dl className="row">
+            <dt className="col-md-6">{getLiteral('client.address.geo.lng')}</dt>
+            <dd className="col-md-6">{address.geo.lng}</dd>
+          </dl>
         </Panel.Body>
       </Panel>}
       {company && <Panel>

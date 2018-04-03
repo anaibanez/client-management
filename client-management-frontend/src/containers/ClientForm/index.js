@@ -117,6 +117,22 @@ const ClientForm = ({
                 nameField="address.zipcode"
                 onChange={changeField}
               />
+              <CustomField
+                width={5}
+                inputWidth={7}
+                label={getLiteral('client.address.geo.lat')}
+                fields={fields}
+                nameField="address.geo.lat"
+                onChange={changeField}
+              />
+              <CustomField
+                width={5}
+                inputWidth={7}
+                label={getLiteral('client.address.geo.lng')}
+                fields={fields}
+                nameField="address.geo.lng"
+                onChange={changeField}
+              />
             </Panel.Body>
           </Panel>
 
