@@ -95,7 +95,7 @@ class ClientDAO {
   async deleteClient(id) {
     const idx = this.data.findIndex(item => item.id === id);
     if (idx >= 0) {
-      this.data = [...this.data.splice(idx, 1)];
+      this.data = this.data.filter(item => item.id !== id);
       return;
     }
     throw new APIError(`Unable to find Client with id ${id}`, [], httpStatus.NOT_FOUND, true);
