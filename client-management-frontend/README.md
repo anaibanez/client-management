@@ -128,5 +128,5 @@ The application uses eslint-config-airbnb in order to follow the most of the sty
  To show the localization of the company address is displayed a map using Google Maps Javascript API and react-google-maps library which
  provides a set of React components wrapping the underlying Google Maps JavaScript API v3 instances.
  The coordenates are automatically updates when the user set a marker in the map and viceverse, when 
- the user changes the latitude or longitude input the marker in the map ar updated.
+ the user changes the latitude or longitude input, the marker in the map is updated.
  
