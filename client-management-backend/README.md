@@ -1,8 +1,5 @@
 # Client Management REST API 
 
-[![Build Status](https://img.shields.io/travis/kunalkapadia/express-mongoose-es6-rest-api/master.svg?style=flat-square)](https://travis-ci.org/kunalkapadia/express-mongoose-es6-rest-api)
-[![Coverage Status](https://img.shields.io/coveralls/kunalkapadia/express-mongoose-es6-rest-api/master.svg?style=flat-square)](https://coveralls.io/github/kunalkapadia/express-mongoose-es6-rest-api?branch=master)
-
 ## Overview
 
 Client management backend implemented with Node.js + Express following [Airbnb's Javascript style guide](https://github.com/airbnb/javascript).
@@ -23,12 +20,6 @@ Client management backend implemented with Node.js + Express following [Airbnb's
 
 
 ## Getting Started
-
-##### Clone the repo
-```sh
-git clone TODO
-cd client-management-backend
-```
 
 ##### Install dependencies
 ```sh
