@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 
 import { ClientDetailPage } from '../index';
 import LoadingIndicator from '../../../components/LoadingIndicator';
-import { CLIENT_DETAIL_FETCH_KEY } from '../../App/constants';
+import { CLIENT_DETAIL_FETCH_KEY } from '../../App/fetchConstants';
 
 
 describe('<ClientDetailPage />', () => {

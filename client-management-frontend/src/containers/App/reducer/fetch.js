@@ -1,3 +1,5 @@
+import * as keys from '../fetchConstants';
+
 const actionTypeRegexp = /\w+?_(\w+)_(PENDING|REJECTED|FULFILLED)/;
 
 const getActionPromise = (type) => {
@@ -18,11 +20,11 @@ const defaultPromiseStatus = {
 };
 
 const defaultState = {
-  clients: defaultPromiseStatus,
-  clientDetail: defaultPromiseStatus,
-  client: defaultPromiseStatus,
-  clientUpdate: defaultPromiseStatus,
-  clientCreate: defaultPromiseStatus,
+  [keys.CLIENTS_FETCH_KEY]: defaultPromiseStatus,
+  [keys.CLIENT_DETAIL_FETCH_KEY]: defaultPromiseStatus,
+  [keys.CLIENT_FETCH_KEY]: defaultPromiseStatus,
+  [keys.CLIENT_UPDATE_FETCH_KEY]: defaultPromiseStatus,
+  [keys.CLIENT_CREATE_FETCH_KEY]: defaultPromiseStatus,
 };
 
 export default (state = defaultState, { type, payload }) => {

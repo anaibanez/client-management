@@ -79,7 +79,7 @@ The application uses eslint-config-airbnb in order to follow the most of the sty
  - The presentational ones, which are in components folder. They depends on containers for the data.
  - The container ones, which are connected to the redux store.
  
- **Self-contained components architecture:**
+ **Self-contained components architecture**
  
  This architecture makes easy to reuse component in other projects since all the files are kept in the same folder.
  
@@ -102,10 +102,30 @@ The application uses eslint-config-airbnb in order to follow the most of the sty
  - Memoization
  - Composability
  
- **Redux-saga:**
+ **Redux-saga**
  
  In the application, it is mainly use to manage the interaction with the back-end. The sagas can be started, paused and cancelled from the main application with normal redux actions, it has access to the full redux application state and it can dispatch redux actions as well.
  
+ **Google Maps Javascript API**
+ 
+ To show the localization of the company address is displayed a map using Google Maps Javascript API and react-google-maps library which
+ provides a set of React components wrapping the underlying Google Maps JavaScript API v3 instances.
+ The coordenates are automatically updates when the user set a marker in the map and viceverse, when 
+ the user changes the latitude or longitude input the marker in the map ar updated.
  
  
+ #### Screenshots
+ 
+ ##### Client List (initial screen)
+   ![](doc/ListPage.png)
+  
+ 
+ 
+ ##### Client Detail
+   ![](doc/DetailPage.png)
+  
+ 
+ 
+#####  Client Edit
+   ![](doc/EditPage.png)
  

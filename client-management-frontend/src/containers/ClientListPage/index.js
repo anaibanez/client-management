@@ -91,7 +91,7 @@ const mapStateToProps = createStructuredSelector({
 export function mapDispatchToProps(dispatch) {
   return {
     onGetDataTable: () => dispatch(getDataTable()),
-    onDeleteClient: () => dispatch(deleteClient()),
+    onDeleteClient: (id) => dispatch(deleteClient(id)),
   };
 }
 

@@ -15,7 +15,7 @@ import { getDetail } from './actions';
 // eslint-disable-next-line import/no-named-as-default-member
 import ClientDetail from './ClientDetail';
 import LoadingIndicator from '../../components/LoadingIndicator';
-import { CLIENT_DETAIL_FETCH_KEY } from '../App/constants';
+import { CLIENT_DETAIL_FETCH_KEY } from '../App/fetchConstants';
 import { getLiteral } from '../../utils/utilities';
 import Icon from '../../components/Icon';
 

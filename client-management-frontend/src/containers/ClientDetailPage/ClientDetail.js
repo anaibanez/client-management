@@ -1,12 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Col, Panel } from 'react-bootstrap';
+import { Col, Panel, Row } from 'react-bootstrap';
 import styled from 'styled-components';
 
 import { getLiteral } from '../../utils/utilities';
+import Map from '../../components/Map';
 
-const myClientDetail = ({ className, detail }) => {
-  const { address, company } = detail;
+
+const myClientDetail = ({ className, detail = {} }) => {
+  const { address = { geo: {} }, company = {} } = detail;
+  const { lat, lng } = address.geo;
+  const latitude = parseFloat(lat, 10);
+  const longitude = parseFloat(lng, 10);
   return (<div className={className}>
     <Col md={8}>
       <Panel>
@@ -69,6 +74,17 @@ const myClientDetail = ({ className, detail }) => {
             <dt className="col-md-6">{getLiteral('client.address.geo.lng')}</dt>
             <dd className="col-md-6">{address.geo.lng}</dd>
           </dl>
+
+          {!isNaN(latitude) && !isNaN(longitude) && <Row>
+            <Col md={6} className="colMap" style={{ height: '100vh', width: '100%' }}>
+
+              <Map
+                geo={{ lat: latitude, lng: longitude }}
+                isMarkerShown
+              />
+            </Col>
+          </Row>
+          }
         </Panel.Body>
       </Panel>}
       {company && <Panel>

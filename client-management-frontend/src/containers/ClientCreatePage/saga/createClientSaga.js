@@ -4,7 +4,7 @@ import { unflatten } from 'flat';
 
 import fetchApiSaga from '../../App/fetchSaga';
 import { createClient } from '../../../api/client';
-import { CLIENT_CREATE_FETCH_KEY } from '../../App/constants';
+import { CLIENT_CREATE_FETCH_KEY } from '../../App/fetchConstants';
 
 export default function* updateClientData({ clientToUpdate }) {
   const response = yield call(fetchApiSaga, createClient, CLIENT_CREATE_FETCH_KEY, unflatten(clientToUpdate));

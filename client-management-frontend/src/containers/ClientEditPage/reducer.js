@@ -9,7 +9,9 @@ export default (state = defaultState, { type, payload }) => {
     case SET_CLIENT:
       return {
         ...state,
-        clientUpdate: payload,
+        clientUpdate: {
+          ...payload,
+        },
       };
     case CHANGE_FIELD:
       return {

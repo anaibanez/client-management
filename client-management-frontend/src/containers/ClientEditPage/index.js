@@ -14,7 +14,7 @@ import saga from './saga/rootSagas';
 import { getClient, changeField, updateClient } from './actions';
 import ClientForm from '../ClientForm';
 import LoadingIndicator from '../../components/LoadingIndicator';
-import { CLIENT_FETCH_KEY } from '../App/constants';
+import { CLIENT_FETCH_KEY } from '../App/fetchConstants';
 import { getLiteral } from '../../utils/utilities';
 import Icon from '../../components/Icon';
 

@@ -29,7 +29,7 @@ MyInputField.propTypes = {
     PropTypes.string,
     PropTypes.object,
   ]),
-  value: PropTypes.string,
+  value: PropTypes.any,
   onChange: PropTypes.func,
   error: PropTypes.bool,
   errorMessage: PropTypes.string,
@@ -46,5 +46,5 @@ export const GenericInput = styled(MyInputField)`
 `;
 
 export const InputForm = GenericInput.extend`
-    padding: 20px 0;  
+    padding: 20px 0;
 `;

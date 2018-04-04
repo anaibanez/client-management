@@ -36,8 +36,8 @@ export default ({ ...actions }) => [
     Header: '',
     accessor: '',
     Cell: (row) => (<span>
-      <Button onClick={() => actions.goDetail(row.original.id)} bsStyle="secondary"><i className="fa fa-address-card-o"></i></Button>
-      <Button onClick={() => actions.goEdit(row.original.id)} bsStyle="info"><i className="fa fa-edit"></i></Button>
+      <Button onClick={() => actions.goDetail(row.original.id)} bsStyle="info"><i className="fa fa-address-card-o"></i></Button>
+      <Button onClick={() => actions.goEdit(row.original.id)} bsStyle="default"><i className="fa fa-edit"></i></Button>
       <Button onClick={() => actions.delete(row.original.id)} bsStyle="danger"><i className="fa fa-trash-o"></i></Button>
     </span>),
   },

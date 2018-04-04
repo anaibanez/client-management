@@ -4,7 +4,7 @@ import { shallow } from 'enzyme';
 import { mapDispatchToProps, ClientEditPage } from '../index';
 import { updateClient } from '../actions';
 import LoadingIndicator from '../../../components/LoadingIndicator';
-import { CLIENT_FETCH_KEY } from '../../App/constants';
+import { CLIENT_FETCH_KEY } from '../../App/fetchConstants';
 
 
 const client = {
