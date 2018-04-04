@@ -119,7 +119,9 @@ The application uses eslint-config-airbnb in order to follow the most of the sty
  
  **Redux-saga**
  
- In the application, it is mainly use to manage the interaction with the back-end. The sagas can be started, paused and cancelled from the main application with normal redux actions, it has access to the full redux application state and it can dispatch redux actions as well. In the application all the backend request are managed with it.
+ In the application, it is mainly use to manage the interaction with the back-end, all this kind of actions are managed with it.
+  The sagas can be started, paused and cancelled from the main application with normal redux actions, 
+  it has access to the full redux application state and it can dispatch redux actions as well. 
   
  There is a generic saga `fetchSaga` to manage requests and show Modal if error occurs.
  
