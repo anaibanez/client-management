@@ -18,7 +18,7 @@ const CustomField = ({ fields, nameField, onChange, ...props }) => (
 );
 
 const ClientForm = ({
-  fields,
+  fields = {},
   changeField,
   submitAction,
   textButton,
