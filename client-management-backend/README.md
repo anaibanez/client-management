@@ -128,9 +128,3 @@ Get code coverage summary on executing `npm run test:coverage`. This creates a r
 ![Code Coverage Text Summary](doc/coverage.png)
 
 
-## Travis - Continuous integration
-Travis CI is a hosted, distributed continuous integration service used to build and test software projects hosted at GitHub.
-
-
-Check at
-https://travis-ci.org/xxx/client-management
