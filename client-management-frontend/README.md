@@ -16,7 +16,7 @@ This project is the frontend of the Client management application implemented wi
 | Ready to i18n via react-intl | react-intl provides React components and an API to format dates, numbers, and strings, including pluralization and handling translations.|
 
 
-## Getting Started
+### Getting Started
 
 Install dependencies:
 ```sh
@@ -36,7 +36,22 @@ The app will automatically reload if you change any of the source files.
 
 The webpackDevServer config (webpackDevServer.config.js file) has been configured to stablish a proxy to the default backend host and port (http://localhost:4040) in order to avoid cross-domain issues during the development.
 
-#### Tests
+ ### Screenshots
+ 
+ ##### Client List (initial screen)
+   ![](doc/ListPage.png)
+  
+ 
+ 
+ ##### Client Detail
+   ![](doc/DetailPage.png)
+  
+ 
+ 
+#####  Client Edit
+   ![](doc/EditPage.png)
+
+### Tests
 ```sh
 # Run tests 
 npm test
@@ -47,14 +62,14 @@ The application has an example of unit tests using Jest and Enzyme for component
 
 ![](doc/test.png)
 
-#### Lint
+### Lint
 ```sh
 # Lint code with ESLint
 npm run lint
 ```
 The application uses eslint-config-airbnb in order to follow the most of the styles of the Airbnb style guide
 
-#### Core Technologies:
+### Core Technologies:
 
  - React
  
@@ -69,7 +84,7 @@ The application uses eslint-config-airbnb in order to follow the most of the sty
  - Styled Components
  
  
-#### Project structure
+### Project structure
  
  ![](doc/projectStructure.png)
  
@@ -112,20 +127,4 @@ The application uses eslint-config-airbnb in order to follow the most of the sty
  provides a set of React components wrapping the underlying Google Maps JavaScript API v3 instances.
  The coordenates are automatically updates when the user set a marker in the map and viceverse, when 
  the user changes the latitude or longitude input the marker in the map ar updated.
- 
- 
- #### Screenshots
- 
- ##### Client List (initial screen)
-   ![](doc/ListPage.png)
-  
- 
- 
- ##### Client Detail
-   ![](doc/DetailPage.png)
-  
- 
- 
-#####  Client Edit
-   ![](doc/EditPage.png)
  
