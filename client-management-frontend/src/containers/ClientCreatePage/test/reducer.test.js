@@ -8,7 +8,10 @@ describe('createClientReducer', () => {
   let state;
   beforeEach(() => {
     state = {
-      clientCreate: {},
+      clientCreate: {
+        'address.geo.lat': '38.34',
+        'address.geo.lng': '-0.48',
+      },
     };
   });
 
