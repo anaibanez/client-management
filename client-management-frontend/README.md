@@ -36,20 +36,6 @@ The app will automatically reload if you change any of the source files.
 
 The webpackDevServer config (webpackDevServer.config.js file) has been configured to stablish a proxy to the default backend host and port (http://localhost:4040) in order to avoid cross-domain issues during the development.
 
- ### Screenshots
- 
- ##### Client List (initial screen)
-   ![](doc/ListPage.png)
-  
- 
- 
- ##### Client Detail
-   ![](doc/DetailPage.png)
-  
- 
- 
-#####  Client Edit
-   ![](doc/EditPage.png)
 
 ### Tests
 ```sh
@@ -131,4 +117,20 @@ The application uses eslint-config-airbnb in order to follow the most of the sty
  provides a set of React components wrapping the underlying Google Maps JavaScript API v3 instances.
  The coordenates are automatically updates when the user set a marker in the map and viceverse, when 
  the user changes the latitude or longitude input, the marker in the map is updated.
+ 
+ 
+  ### Screenshots
+  
+  ##### Client List (initial screen)
+![](doc/ListPage.png)
+     
+  
+  ##### Client Detail
+![](doc/DetailPage.png)
+   
+  
+  
+ #####  Client Edit
+![](doc/EditPage.png)
+
  
