@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from 'react-bootstrap';
 
 import { getLiteral } from '../../utils/utilities';
+import Icon from '../../components/Icon';
 
 export default ({ ...actions }) => [
   {
@@ -36,9 +37,9 @@ export default ({ ...actions }) => [
     Header: '',
     accessor: '',
     Cell: (row) => (<span>
-      <Button onClick={() => actions.goDetail(row.original.id)} bsStyle="info"><i className="fa fa-address-card-o"></i></Button>
-      <Button onClick={() => actions.goEdit(row.original.id)} bsStyle="default"><i className="fa fa-edit"></i></Button>
-      <Button onClick={() => actions.delete(row.original.id)} bsStyle="danger"><i className="fa fa-trash-o"></i></Button>
+      <Button onClick={() => actions.goDetail(row.original.id)} bsStyle="info"><Icon name="address-card-o" /></Button>
+      <Button onClick={() => actions.goEdit(row.original.id)} bsStyle="default"><Icon name="edit" /></Button>
+      <Button onClick={() => actions.delete(row.original.id)} bsStyle="danger"><Icon name="trash-o" /></Button>
     </span>),
   },
 ];

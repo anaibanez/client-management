@@ -76,8 +76,7 @@ const myClientDetail = ({ className, detail = {} }) => {
           </dl>
 
           {!isNaN(latitude) && !isNaN(longitude) && <Row>
-            <Col md={6} className="colMap" style={{ width: '100%' }}>
-
+            <Col md={12}>
               <Map
                 geo={{ lat: latitude, lng: longitude }}
                 isMarkerShown

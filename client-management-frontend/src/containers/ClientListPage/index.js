@@ -15,6 +15,7 @@ import injectSaga from '../../utils/injects/injectSaga';
 import reducer from './reducer';
 import saga from './saga/rootSaga';
 import Table from '../../components/Table';
+import Icon from '../../components/Icon';
 import { getDataTable, deleteClient } from './actions';
 import columns from './columnsDefinition';
 import { getLiteral } from '../../utils/utilities';
@@ -54,7 +55,7 @@ export class ClientListPage extends Component {
           <Row>
             <Col>
               <div className="pull-right create">
-                <Button onClick={() => this.goCreate()} bsStyle="success"><i className="fa fa-plus-circle"></i>&nbsp;{getLiteral('client.create')}</Button>
+                <Button onClick={() => this.goCreate()} bsStyle="success"><Icon name="plus-circle" />&nbsp;{getLiteral('client.create')}</Button>
               </div>
             </Col>
           </Row>

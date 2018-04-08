@@ -144,7 +144,7 @@ const ClientForm = ({
                                     onChange={changeField}
                                 />
                                 {!isNaN(latitude) && !isNaN(longitude) && <Row>
-                                    <Col md={6} style={{ width: '100%' }}>
+                                    <Col md={12}>
                                         
                                         <Map
                                             geo={{ lat:  latitude, lng: longitude}}
